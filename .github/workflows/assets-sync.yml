@@ -13,7 +13,7 @@ jobs:
       - name: sync
         uses: at-wat/assets-sync-action@v0
         with:
-          repos: at-wat/mcl_3dl at-wat/neonavigation at-wat/mcl_3dl_msgs at-wat/neonavigation_msgs at-wat/neonavigation_rviz_plugins
+          repos: at-wat/mcl_3dl at-wat/neonavigation at-wat/mcl_3dl_msgs at-wat/neonavigation_msgs at-wat/neonavigation_rviz_plugins sandbox2
           git_user: Atsushi Watanabe
           git_email: atsushi.w@ieee.org
           github_token: ${{ secrets.GITHUB_TOKEN_REPO }}
