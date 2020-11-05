@@ -20,8 +20,21 @@ jobs:
             at-wat/neonavigation
             at-wat/neonavigation_msgs
             at-wat/neonavigation_rviz_plugins
-            openspur/yp-spur
             openspur/ypspur_ros
+          git_user: Atsushi Watanabe
+          git_email: atsushi.w@ieee.org
+          github_token: ${{ secrets.GITHUB_TOKEN_REPO }}
+      - name: sync bloom release actions
+        uses: at-wat/assets-sync-action@v0
+        with:
+          repos: |
+            openspur/yp-spur
+          exclude_paths: |
+            .github/Dockerfile
+            .github/*.sample
+            .github/*.sh
+            .github/workflows/prerelease.yaml
+            .github/workflows/test.yaml
           git_user: Atsushi Watanabe
           git_email: atsushi.w@ieee.org
           github_token: ${{ secrets.GITHUB_TOKEN_REPO }}
