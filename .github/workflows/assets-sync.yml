@@ -34,6 +34,7 @@ jobs:
             .github/*.sample
             .github/*.sh
             .github/workflows/prerelease.yaml
+            .github/workflows/release-candidate.yml
             .github/workflows/test.yaml
           git_user: Atsushi Watanabe
           git_email: atsushi.w@ieee.org
