@@ -33,6 +33,7 @@ jobs:
             .github/Dockerfile
             .github/*.sample
             .github/*.sh
+            .github/workflows/hide-old-bot-comments.yml
             .github/workflows/prerelease.yaml
             .github/workflows/release-candidate.yml
             .github/workflows/test.yaml
