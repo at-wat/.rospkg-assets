@@ -43,6 +43,7 @@ catkin_make run_tests ${CM_OPTIONS} || \
   (gh-pr-comment "${BUILD_LINK} FAILED on ${ROS_DISTRO}" '```catkin_make run_tests``` failed'; false)
 echo '::endgroup::'
 
+echo '::group::post-process'
 if catkin_test_results
 then
   result_text="
