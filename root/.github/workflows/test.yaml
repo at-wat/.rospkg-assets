@@ -83,7 +83,7 @@ jobs:
           name: logs-${{ env.ROS_DISTRO }}.tar.xz
           path: /tmp/logs.tar.xz
           retention-days: 1
-      - uses: codecov/codecov-action@v3
+      - uses: codecov/codecov-action@v4
       - name: Save layer cache
         run: |
           LAYERS=$(docker history -q tester | grep -v missing)
