@@ -83,7 +83,7 @@ jobs:
           name: logs-${{ env.ROS_DISTRO }}.tar.xz
           path: /tmp/logs.tar.xz
           retention-days: 1
-      - uses: codecov/codecov-action@v4
+      - uses: codecov/codecov-action@v5
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
       - name: Save layer cache
